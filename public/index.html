@@ -1,66 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>G.V & Co - Construction Company</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-900 text-white p-6">
-      <h1 class="text-3xl font-bold">G.V & Co</h1>
-      <p class="text-lg">25+ Years of Construction Excellence</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.V & Co - Construction Company</title>
 
-    <section class="p-6 bg-white">
-      <h2 class="text-2xl font-semibold mb-4">About Us</h2>
-      <p class="mb-2">G.V & Co is a leading construction company with over 25 years of excellence. We specialize in on-site building construction and tar road development, complete with electrical installations, CCTV systems, and other essential infrastructure. Our team consists of experienced and dedicated professionals who ensure each project is completed to the highest standards.</p>
-      <p class="mb-2">We are proud to have contributed to several major projects including houses, buildings, and public infrastructure works. With a commitment to quality, timely delivery, and customer satisfaction, G.V & Co has earned a trusted name in the construction industry.</p>
-      <p>We use high-quality materials, modern machinery, and well-planned methods for strong foundations, durable structures, and efficient road networks.</p>
-    </section>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <section class="p-6">
-      <h2 class="text-2xl font-semibold mb-4">Our Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white rounded shadow overflow-hidden">
-          <img src="images/image_4.jpg" alt="House Project" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h4 class="text-lg font-semibold">Residential House</h4>
-            <p>Constructed houses with full facility and safety standards.</p>
-          </div>
-          <nav class="mt-4 flex justify-end space-x-4">
-            <a href="./dashboard.html" class="text-white hover:underline">About</a>
-            <a href="#projects" class="text-white hover:underline">Projects</a>
-            <a href="#contact" class="text-white hover:underline">Contact</a>
-          </nav>
-        </div>
-        <div class="bg-white rounded shadow overflow-hidden">
-          <img src="images/image_6.jpg" alt="Building Project" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h4 class="text-lg font-semibold">Building Project</h4>
-            <p>Constructed with full facilities including electrical and sanitary infrastructure.</p>
-          </div>
-        </div>
-        <div class="bg-white rounded shadow overflow-hidden">
-          <img src="images/image_3.jpg" alt="Infrastructure Projects" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h4 class="text-lg font-semibold">Infrastructure Projects</h4>
-            <p>Well-laid tar roads with integrated drainage and street lighting.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <section class="p-6 bg-white">
-      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-      <p class="mb-2">Phone: +91 9788006177, +91 7598658161</p>
-      <p class="mb-2">Email: gokulbharatham2000@gmail.com</p>
-      <p class="mb-2">Address: 31, Mariyamman Kovil Street, P.K. Ganapathipalayam (PO), Tamil Nadu 638153</p>
-      <p><a href="https://share.google/o0xAxdo18yMPZChvo" target="_blank" class="text-blue-600 underline">View on Google Maps</a></p>
-    </section>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <footer class="bg-blue-900 text-white text-center p-4 mt-6">
-      <p>&copy; 2025 G.V & Co. All rights reserved.</p>
-    </footer>
-  </body>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Slider */
+    .slider {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(300px * 6);
+      animation: scroll 20s linear infinite;
+    }
+
+    .slider:hover .slide-track {
+      animation-play-state: paused;
+    }
+
+    .slide {
+      width: 300px;
+      margin-right: 20px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+<!-- NAVBAR -->
+<header class="flex justify-between items-center px-8 py-5 bg-gray-800 sticky top-0 z-50">
+  <h1 class="text-2xl font-bold text-blue-400">G.V & Co</h1>
+</header>
+
+<!-- HERO -->
+<section class="text-center py-24 bg-gradient-to-r from-blue-600 to-cyan-500" data-aos="fade-down">
+  <h2 class="text-4xl md:text-6xl font-bold mb-4">
+    We Build Quality That Lasts
+  </h2>
+  <p class="text-lg">25+ Years of Trusted Construction Excellence</p>
+</section>
+
+<!-- ABOUT -->
+<section class="p-12 bg-gray-800" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 text-blue-400">About Us</h2>
+  <p class="text-gray-300 leading-relaxed">
+    G.V & Co has over 25+ years of experience delivering high-quality residential, commercial, and infrastructure projects.
+    We specialize in strong foundations, durable structures, and modern construction practices.
+    Our focus is on quality, safety, and complete customer satisfaction.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="p-12 bg-gray-900">
+  <h2 class="text-3xl font-bold mb-8 text-blue-400 text-center" data-aos="fade-up">Our Services</h2>
+
+  <div class="space-y-6">
+
+    <div data-aos="fade-right">
+      <h3 class="text-xl font-semibold">🏠 Residential Construction</h3>
+      <p class="text-gray-300">
+        We build modern homes with strong structure, proper planning, and high-quality materials from foundation to finishing.
+      </p>
+    </div>
+
+    <div data-aos="fade-left">
+      <h3 class="text-xl font-semibold">🏢 Building Projects</h3>
+      <p class="text-gray-300">
+        Commercial buildings with full infrastructure including electrical, plumbing, and finishing works.
+      </p>
+    </div>
+
+    <div data-aos="fade-right">
+      <h3 class="text-xl font-semibold">🛣 Tar Road Works</h3>
+      <p class="text-gray-300">
+        Durable tar roads with proper leveling, drainage, and smooth finishing for long-lasting performance.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECT SLIDER -->
+<section class="p-12 bg-gray-800">
+  <h2 class="text-3xl font-bold mb-8 text-blue-400 text-center" data-aos="fade-up">Our Projects</h2>
+
+  <div class="slider" data-aos="zoom-in">
+    <div class="slide-track">
+
+      <div class="slide"><img src="images/image_4.jpg" class="rounded h-48 w-full object-cover"></div>
+      <div class="slide"><img src="images/image_6.jpg" class="rounded h-48 w-full object-cover"></div>
+      <div class="slide"><img src="images/image_3.jpg" class="rounded h-48 w-full object-cover"></div>
+
+      <!-- duplicate -->
+      <div class="slide"><img src="images/image_4.jpg" class="rounded h-48 w-full object-cover"></div>
+      <div class="slide"><img src="images/image_6.jpg" class="rounded h-48 w-full object-cover"></div>
+      <div class="slide"><img src="images/image_3.jpg" class="rounded h-48 w-full object-cover"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="p-12 bg-gray-900 text-center" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 text-blue-400">Contact</h2>
+  <p>📞 9788006177 / 7598658161</p>
+</section>
+
+<!-- WHATSAPP -->
+<div class="fixed bottom-5 right-5 group z-50">
+
+  <span class="absolute bottom-14 right-1/2 translate-x-1/2 bg-black px-3 py-1 text-sm rounded opacity-0 group-hover:opacity-100 transition">
+    Chat with us
+  </span>
+
+  <a href="https://wa.me/917598658161?text=Hello%20sir%2C%20need%20details"
+     class="bg-green-500 hover:bg-green-600 p-4 rounded-full shadow-lg transition transform hover:scale-110">
+    💬
+  </a>
+</div>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
 </html>

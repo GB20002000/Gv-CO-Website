@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.V & Co - Construction, Tar Roads & Interiors | 25+ Years Experience</title>
+  
+  <meta name="description" content="G.V & Co is a premier construction firm with 25+ years of experience in house construction, commercial building projects, tar road infrastructure, and turnkey luxury interiors." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION (WHITE THEME)
+       ========================================== -->
+  <header class="header" id="mainHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="logo">
+        <div class="logo-badge">GV</div>
+        <div class="logo-text-group">
+          <span class="logo-title">G.V & CO</span>
+          <span class="logo-subtitle">CONSTRUCTION & INTERIORS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#gallery" class="nav-link">Photo Gallery</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary nav-cta">Get Quote</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="mobile-nav-link"><span>🏠</span> Home</a></li>
+      <li><a href="#gallery" class="mobile-nav-link"><span>🖼️</span> Photo Gallery</a></li>
+      <li><a href="#about" class="mobile-nav-link"><span>ℹ️</span> About Us</a></li>
+      <li><a href="#services" class="mobile-nav-link"><span>🛠️</span> Our Services</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><span>📞</span> Contact Us</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="tel:9788006177" class="btn btn-secondary" style="width: 100%;">
+        📞 Call: 97880 06177
+      </a>
+      <a href="https://wa.me/917598658161?text=Hello%20G.V%20%26%20Co%2C%20I%20am%20interested%20in%20your%20services" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+        💬 Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       BLACK HERO BACKGROUND SECTION
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        
+        <div class="hero-badge">
+          <span>✨</span> 25+ Years of Construction Excellence
+        </div>
+
+        <h1 class="hero-title">
+          Building Strong Foundations, <br>
+          Delivering <span class="text-gold">Turnkey Quality</span>
+        </h1>
+
+        <p class="hero-description">
+          From turnkey house construction and commercial building projects to tar road works and luxury interior fit-outs — explore our completed photo gallery.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary">
+            <span>Explore Photo Gallery</span> <span>🖼️</span>
+          </a>
+          <a href="https://wa.me/917598658161?text=Hello%20G.V%20%26%20Co%2C%20I%20need%20details%20for%20construction" target="_blank" class="btn btn-whatsapp">
+            <span>WhatsApp Us</span> <span>💬</span>
+          </a>
+          <a href="tel:9788006177" class="btn btn-gold">
+            <span>Call 9788006177</span> <span>📞</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       STATS COUNTER SECTION
+       ========================================== -->
+  <div class="stats-section" id="statsSection">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="25" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">On-Time Handover</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       FEATURED PHOTO GALLERY (SHOWS 3 INITIALLY + VIEW MORE)
+       ========================================== -->
+  <section class="py-section-white" id="gallery">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag">Project Showcase</div>
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-subtitle">Click on any photo to open full high-resolution image preview.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="residential">Residential Homes</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="tarroad">Tar Road Works</button>
+        <button class="filter-btn" data-filter="interiors">Interior Works</button>
+      </div>
+
+      <!-- Photo Grid (First 3 visible, rest hidden initially for View More) -->
+      <div class="portfolio-grid" id="portfolioGrid">
+        
+        <!-- Photo 1 (Visible) -->
+        <div class="portfolio-card" data-category="residential">
+          <div class="portfolio-image-holder">
+            <img src="images/residential_villa.jpg" alt="Residential Luxury Villa Construction" />
+          </div>
+        </div>
+
+        <!-- Photo 2 (Visible) -->
+        <div class="portfolio-card" data-category="commercial">
+          <div class="portfolio-image-holder">
+            <img src="images/commercial_building.jpg" alt="Commercial Building Project" />
+          </div>
+        </div>
+
+        <!-- Photo 3 (Visible) -->
+        <div class="portfolio-card" data-category="tarroad">
+          <div class="portfolio-image-holder">
+            <img src="images/tar_road_work.jpg" alt="Tar Road Infrastructure Works" />
+          </div>
+        </div>
+
+        <!-- Photo 4 (Hidden initially) -->
+        <div class="portfolio-card gallery-hidden" data-initial-hidden="true" data-category="interiors">
+          <div class="portfolio-image-holder">
+            <img src="images/modular_kitchen.jpg" alt="Modular Kitchen Interior Fitout" />
+          </div>
+        </div>
+
+        <!-- Photo 5 (Hidden initially) -->
+        <div class="portfolio-card gallery-hidden" data-initial-hidden="true" data-category="interiors">
+          <div class="portfolio-image-holder">
+            <img src="images/false_ceiling.jpg" alt="False Ceiling Interior Design" />
+          </div>
+        </div>
+
+        <!-- Photo 6 (Hidden initially) -->
+        <div class="portfolio-card gallery-hidden" data-initial-hidden="true" data-category="residential">
+          <div class="portfolio-image-holder">
+            <img src="images/image_4.jpg" alt="House Construction Site Work" />
+          </div>
+        </div>
+
+        <!-- Photo 7 (Hidden initially) -->
+        <div class="portfolio-card gallery-hidden" data-initial-hidden="true" data-category="residential">
+          <div class="portfolio-image-holder">
+            <img src="images/image_6.jpg" alt="Building Construction Engineering" />
+          </div>
+        </div>
+
+        <!-- Photo 8 (Hidden initially) -->
+        <div class="portfolio-card gallery-hidden" data-initial-hidden="true" data-category="tarroad">
+          <div class="portfolio-image-holder">
+            <img src="images/image_3.jpg" alt="Tar Road Paving Construction" />
+          </div>
+        </div>
+
+        <!-- Photo 9 (Hidden initially) -->
+        <div class="portfolio-card gallery-hidden" data-initial-hidden="true" data-category="residential">
+          <div class="portfolio-image-holder">
+            <img src="images/image_2.jpg" alt="Independent Home Elevation" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View More Photos Button -->
+      <div class="view-more-wrapper">
+        <button class="btn-view-more" id="viewMoreBtn">
+          <span>View More Photos (6 More Photos)</span> <span>▼</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       ABOUT US SECTION (WHITE THEME)
+       ========================================== -->
+  <section class="py-section-white bg-surface-white" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-image-wrapper">
+          <img src="images/image_1.jpg" alt="G.V & Co Construction Engineering Site" />
+          <div class="about-experience-badge">
+            <div class="badge-num">25+</div>
+            <div class="badge-text">Years of Proven <br>Industry Leadership</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag">About G.V & Co</div>
+          <h2 class="section-title">25+ Years of Engineering & Construction Experience</h2>
+          
+          <div class="about-content-paragraphs">
+            <p>
+              G.V & Co has over <strong>25+ years</strong> of experience in construction, delivering high-quality residential, commercial, and infrastructure projects.
+            </p>
+            <p>
+              We specialize in house construction, buildings, tar road works, electrical systems, CCTV, plumbing and sanitary works.
+            </p>
+            <p>
+              We also provide complete <strong>interior works</strong> including modular kitchen, false ceiling, flooring, painting and woodwork. From foundation to final interior finish — we handle everything with quality and precision.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <span>House Construction</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <span>Building Projects</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <span>Tar Road Works</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <span>Turnkey Interior Solutions</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Contact Consultation ➔</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       SERVICES SECTION (RICH DARK LUXURY CONTRAST THEME)
+       ========================================== -->
+  <section class="py-section-dark" id="services">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag-dark">Our Services</div>
+        <h2 class="section-title-dark">Construction Services</h2>
+        <p class="section-subtitle-dark">Precision engineering and quality execution across all civil construction domains.</p>
+      </div>
+
+      <div class="services-grid-dark">
+        
+        <!-- Service 1 -->
+        <div class="service-card-dark">
+          <div class="service-icon-box-dark">🏠</div>
+          <h3 class="service-title-dark">House Construction</h3>
+          <p class="service-desc-dark">Turnkey residential house construction from foundation, brick masonry, and RCC slab to painting.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card-dark">
+          <div class="service-icon-box-dark">🏢</div>
+          <h3 class="service-title-dark">Building Projects</h3>
+          <p class="service-desc-dark">Commercial complexes, office buildings, and multi-story structural engineering projects.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card-dark">
+          <div class="service-icon-box-dark">🛣️</div>
+          <h3 class="service-title-dark">Tar Road Works</h3>
+          <p class="service-desc-dark">Heavy-duty asphalt paving, layout internal road construction, leveling, and drainage work.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card-dark">
+          <div class="service-icon-box-dark">🏡</div>
+          <h3 class="service-title-dark">Interior Works</h3>
+          <p class="service-desc-dark">Complete interior woodwork, custom wardrobes, flooring, and interior painting.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card-dark">
+          <div class="service-icon-box-dark">🍳</div>
+          <h3 class="service-title-dark">Modular Kitchen & Ceiling</h3>
+          <p class="service-desc-dark">Modern modular kitchen cabinets combined with designer gypsum false ceilings & cove LED lighting.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card-dark">
+          <div class="service-icon-box-dark">⚡</div>
+          <h3 class="service-title-dark">Plumbing, Electrical & CCTV</h3>
+          <p class="service-desc-dark">Concealed electrical copper wiring, sanitary fixtures, plumbing lines, and CCTV camera setup.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       CONTACT & INQUIRY SECTION (SENDS EMAIL TO gokulbharatham2000@gmail.com)
+       ========================================== -->
+  <section class="py-section-dark" id="contact" style="border-top: 1px solid var(--border-dark);">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-tag-dark">Contact Us</div>
+        <h2 class="section-title-dark">Get In Touch With G.V & Co</h2>
+        <p class="section-subtitle-dark">Reach us via direct phone call, WhatsApp, or send an inquiry below (Sent to gokulbharatham2000@gmail.com).</p>
+      </div>
+
+      <div class="contact-grid-dark">
+        
+        <!-- Contact Details -->
+        <div class="contact-info-card-dark">
+          
+          <div class="contact-item-dark">
+            <div class="contact-icon-dark">📞</div>
+            <div>
+              <div class="contact-detail-title-dark">Direct Phone Calls</div>
+              <div class="contact-numbers-list">
+                <a href="tel:9788006177" class="contact-detail-value-dark">9788006177</a>
+                <a href="tel:7598658161" class="contact-detail-value-dark">7598658161</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item-dark">
+            <div class="contact-icon-dark">💬</div>
+            <div>
+              <div class="contact-detail-title-dark">WhatsApp Support</div>
+              <a href="https://wa.me/917598658161?text=Hello%20G.V%20%26%20Co%2C%20I%20want%20to%20discuss%20a%20new%20project" target="_blank" class="contact-detail-value-dark" style="color: var(--accent-emerald);">
+                +91 75986 58161 (Chat Now)
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item-dark">
+            <div class="contact-icon-dark">✉️</div>
+            <div>
+              <div class="contact-detail-title-dark">Official Email</div>
+              <a href="mailto:gokulbharatham2000@gmail.com" class="contact-detail-value-dark" style="font-size: 1rem; color: #60a5fa;">
+                gokulbharatham2000@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <a href="https://wa.me/917598658161?text=Hello%20G.V%20%26%20Co%2C%20I%20need%20details" target="_blank" class="btn btn-whatsapp" style="margin-top: 1rem;">
+            <span>Chat on WhatsApp</span> <span>💬</span>
+          </a>
+
+        </div>
+
+        <!-- Contact Form (Directly posting to gokulbharatham2000@gmail.com via FormSubmit) -->
+        <div class="contact-form-card-dark">
+          <h3 style="font-size: 1.4rem; margin-bottom: 1.5rem; color: #ffffff;">Send Us an Inquiry</h3>
+
+          <form id="contactForm" action="https://formsubmit.co/gokulbharatham2000@gmail.com" method="POST">
+            <!-- FormSubmit Configurations -->
+            <input type="hidden" name="_subject" value="New Construction Inquiry from G.V & Co Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <div class="form-group-dark" style="margin-bottom: 1.25rem;">
+              <label class="form-label-dark" for="contactName">Your Full Name *</label>
+              <input type="text" id="contactName" name="Name" class="form-input-dark" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group-dark" style="margin-bottom: 1.25rem;">
+              <label class="form-label-dark" for="contactPhone">Phone Number *</label>
+              <input type="tel" id="contactPhone" name="Phone" class="form-input-dark" placeholder="Enter your phone number" required />
+            </div>
+
+            <div class="form-group-dark" style="margin-bottom: 1.25rem;">
+              <label class="form-label-dark" for="contactService">Required Service</label>
+              <select id="contactService" name="Service Required" class="form-select-dark">
+                <option value="House Construction">House Construction</option>
+                <option value="Building Projects">Building Projects</option>
+                <option value="Tar Road Works">Tar Road Works</option>
+                <option value="Interior Works">Interior Works</option>
+                <option value="Modular Kitchen & Ceiling">Modular Kitchen & False Ceiling</option>
+                <option value="Electrical, Plumbing & CCTV">Electrical, Plumbing & CCTV</option>
+              </select>
+            </div>
+
+            <div class="form-group-dark" style="margin-bottom: 1.5rem;">
+              <label class="form-label-dark" for="contactMessage">Project Message / Location</label>
+              <textarea id="contactMessage" name="Message" class="form-input-dark" rows="4" placeholder="Enter your project details..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 0.9rem;">
+              Submit Inquiry to Email & WhatsApp ➔
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="logo" style="margin-bottom: 1rem;">
+            <div class="logo-badge">GV</div>
+            <div class="logo-text-group">
+              <span class="logo-title" style="color: #ffffff;">G.V & CO</span>
+              <span class="logo-subtitle">CONSTRUCTION & INTERIORS</span>
+            </div>
+          </div>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+            25+ years of experience in house construction, building projects, tar road works, electrical, plumbing, CCTV, and interior works.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">House Construction</a></li>
+            <li><a href="#services">Building Projects</a></li>
+            <li><a href="#services">Tar Road Works</a></li>
+            <li><a href="#services">Interior Works</a></li>
+            <li><a href="#services">Modular Kitchens</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:9788006177">📞 97880 06177</a></li>
+            <li><a href="tel:7598658161">📞 75986 58161</a></li>
+            <li><a href="mailto:gokulbharatham2000@gmail.com">✉️ gokulbharatham2000@gmail.com</a></li>
+            <li><a href="https://wa.me/917598658161" target="_blank">💬 WhatsApp Direct</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 G.V & Co Construction Company. All Rights Reserved.</div>
+        <div>25+ Years of Quality & Reliability</div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       FLOATING WIDGETS
+       ========================================== -->
+  <div class="floating-widgets">
+    <button class="back-to-top" id="backToTop" title="Back to Top">↑</button>
+    <a href="https://wa.me/917598658161?text=Hello%20sir%2C%20need%20details" target="_blank" class="whatsapp-float-btn" title="Chat on WhatsApp">
+      💬
+    </a>
+  </div>
+
+
+  <!-- ==========================================
+       LIGHTBOX OVERLAY MODAL
+       ========================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightboxClose">✕</span>
+      <img id="lightboxImg" class="lightbox-img" src="" alt="Full view project photo" />
+    </div>
+  </div>
+
+
+  <!-- Custom JS Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
